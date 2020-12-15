@@ -1,0 +1,21 @@
+body{ perspective: 5000px;}
+img { position:absolute;height:270px;width:415px;}
+		
+img:nth-child(1){transform: translateZ(500px);}
+img:nth-child(2){transform: translateZ(-500px);}
+img:nth-child(3){transform:rotateY(45deg) translateZ(-500px);}
+img:nth-child(4){transform:rotateY(45deg)  translateZ(500px);}
+img:nth-child(5){transform:rotateY(-45deg) translateZ(500px);}
+img:nth-child(6){transform:rotateY(-45deg) translateZ(-500px);}
+img:nth-child(7){transform:rotateY(90deg) translateZ(500px);}
+img:nth-child(8){transform:rotateY(90deg) translateZ(-500px);}
+
+div{margin:0 auto;margin-top:250px;
+    transform-style: preserve-3d;
+    animation:zhuan 30s linear  infinite;height:270px;width:480px;}
+
+    @keyframes zhuan{
+                0%{transform:rotateX(-20deg) rotateY(0);}
+                100%{transform: rotateX(-20deg) rotateY(360deg);}
+            }
+    
